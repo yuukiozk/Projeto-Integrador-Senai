@@ -1,0 +1,311 @@
+@media only screen and (max-device-width: 900px) {
+    /* .menu { width:100%; } */
+    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    margin: 1em;
+    text-align: center;
+    background-color: #121212;
+   
+
+  }
+  .nav{
+    background: #121212;
+
+
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #27242a;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #1629fb;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgb(92, 92, 92);
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  .line-1 anim-typewriter{ transition: width 0.5s ease 0s;font-size:2px
+}
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  .titulo{
+    height:0px;background-color:#121212;
+    color:#ffffff;
+    font-size:15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #3a3939;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #ffffff;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
+  
+
+  .parallax {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+    /* Set a specific height */
+    min-height: 450px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.parallax1 {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/2582932/pexels-photo-2582932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("https://images.pexels.com/photos/2225616/pexels-photo-2225616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.text-center p-4{
+    background-color: black;
+}
+
+
+
+
+
+  /* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 3s steps(44) 1s 1 normal both,
+             blinkTextCursor 800ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 15em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255, 255, 255, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*cookies */
+
+ .cookieConsentContainer {
+            z-index: 999;
+            width: 350px;
+            min-height: 20px;
+            box-sizing: border-box;
+            padding: 30px 30px 30px 30px;
+            background: #232323;
+            overflow: hidden;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none
+        }
+
+        .cookieConsentContainer .cookieTitle a {
+            font-family: OpenSans, arial, sans-serif;
+            color: #fff;
+            font-size: 22px;
+            line-height: 20px;
+            display: block
+        }
+
+        .cookieConsentContainer .cookieDesc p {
+            margin: 0;
+            padding: 0;
+            font-family: OpenSans, arial, sans-serif;
+            color: #fff;
+            font-size: 13px;
+            line-height: 20px;
+            display: block;
+            margin-top: 10px
+        }
+
+        .cookieConsentContainer .cookieDesc a {
+            font-family: OpenSans, arial, sans-serif;
+            color: #fff;
+            text-decoration: underline
+        }
+
+        .cookieConsentContainer .cookieButton a {
+            display: inline-block;
+            font-family: OpenSans, arial, sans-serif;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 14px;
+            background: #000;
+            box-sizing: border-box;
+            padding: 15px 24px;
+            text-align: center;
+            transition: background .3s
+        }
+
+        .cookieConsentContainer .cookieButton a:hover {
+            cursor: pointer;
+            background: #3e9b67
+        }
+
+        @media (max-width:980px) {
+            .cookieConsentContainer {
+                bottom: 0 !important;
+                left: 0 !important;
+                width: 100% !important
+            }
+        }
+
+      
