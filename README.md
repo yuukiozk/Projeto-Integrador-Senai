@@ -7,3 +7,10 @@ que são de "más práticas"
 
 
 Opiniões e alterações são sempre bem vindas!
+
+----------------------------------------------------------------
+
+*Existe uma função mobile, ao redimensionar a tela, o menu será responsivo com a nav bar!
+
+
+
