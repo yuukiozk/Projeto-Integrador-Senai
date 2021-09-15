@@ -258,7 +258,7 @@
 
         .cookieConsentContainer .cookieTitle a {
             font-family: OpenSans, arial, sans-serif;
-            color: #fff;
+            color: rgb(255, 255, 255);
             font-size: 22px;
             line-height: 20px;
             display: block
@@ -288,7 +288,7 @@
             font-size: 14px;
             font-weight: 700;
             margin-top: 14px;
-            background: #000;
+            background: rgb(107, 107, 107);
             box-sizing: border-box;
             padding: 15px 24px;
             text-align: center;
