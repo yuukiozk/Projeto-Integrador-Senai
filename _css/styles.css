@@ -297,7 +297,7 @@
 
         .cookieConsentContainer .cookieButton a:hover {
             cursor: pointer;
-            background: #3e9b67
+            background: #b6b6b6
         }
 
         @media (max-width:980px) {
