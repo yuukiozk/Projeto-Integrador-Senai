@@ -22,8 +22,12 @@ var validos = () => {
   if (document.getElementById("cep").value == "") return false;
 
 
+
+
 }
 
+
+/*Validações de Informações */
 
 
 
